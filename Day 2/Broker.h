@@ -59,10 +59,18 @@ class Broker
 
              string getBankInfo(Bank &obj)
              {
-                return "Bank Name : "+obj.getBankName()+"\n"+
-                        "Established Date : "+obj.getEstablishedDate()+"\n"+
-                        "bankType : "+obj.getBankType()+"\n"+
-                        "branchName : "+obj.getBranchName();
+                return obj.getInfo();
+             }
+             
+             string getBankInfo(Bank obj[],int size)
+             {
+             	for(int i=0;i<size;i++)
+             	{
+             		return obj[i].getInfo();
+             	}
              }
 };
 #endif
+
+
+
