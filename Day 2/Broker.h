@@ -49,7 +49,7 @@ class Broker
                 double minimum=obj[0].getInterestRate();
                 for(i=1;i<length;i++)
                 {
-                    if(minimum<obj[i].getInterestRate())
+                    if(minimum>obj[i].getInterestRate())
                     {
                         minimum=obj[i].getInterestRate();
                     }

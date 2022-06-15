@@ -120,7 +120,7 @@ int main()
 
     rate=b.comparisionInterest(ar);
     cout<<rate;
-    name=getBankName(rate,h,s,i,ib);
+    name=getBankName(rate,h,s,i,ib);	
 
     cout<<"\n\n The Bank With Lowest Interest Rate is : "<<name;
 
